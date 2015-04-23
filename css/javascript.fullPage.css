@@ -1,0 +1,303 @@
+/**
+ * fullPage Pure Javascript v.0.0.4 (Alpha) - Not support given until Beta version.
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+    height:100%;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+    height:100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: scroll;
+
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    opacity: 1;
+    background-color: #EAECDB;
+    width: 25%;
+    top: 0;
+    bottom: 0;
+    padding-top: 40vh;
+}
+#fp-nav.right {
+    right: 0;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-family: 'GothamProLight';
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a .round,
+.fp-slidesNav ul li a .round {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 5px;
+    width: 5px;
+    border: 0;
+    background: #F04C49;
+    left: 50%;
+    top: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -6px;
+    color: #000;
+    font-size: 1vw;
+    white-space: nowrap;
+    display: block;
+    opacity: 1;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip{
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 2vw;
+}
+
+#fp-nav ul{
+    position: absolute;
+    right: 10%;
+}
+#fp-nav ul li{
+    padding-bottom: 5vh;
+}
+
+#fp-nav ul li a.active div,
+#fp-nav ul li:hover a.active div{
+    font-size: 1.1vw;
+    margin-top: -2px;
+    font-family: 'GothamProBlack';
+}
+#fp-nav ul li a.active .round .round--active,
+.fp-slidesNav ul li a.active .round .round--active,
+#fp-nav ul li:hover a.active .round .round--active,
+.fp-slidesNav ul li:hover a.active .round .round--active{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #F04C49;
+}
+div#fp-nav{
+    margin-top: 0 !important;
+}
+
+.menu-none{
+    display: none !important;
+}
+
+body.fp-viewing-about-site-2 #fp-nav li:first-child a .round .round--active{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #F04C49;
+}
+body.fp-viewing-about-site-2 #fp-nav ul li:first-child a div{
+    font-size: 1.1vw;
+    margin-top: -2px;
+    font-family: 'GothamProBlack';
+}
+
+body.fp-viewing-advertising-block #fp-nav li:nth-child(3) a .round .round--active,
+body.fp-viewing-top-phrases #fp-nav li:nth-child(3) a .round .round--active,
+body.fp-viewing-announcement #fp-nav li:nth-child(3) a .round .round--active,
+body.fp-viewing-geotagging #fp-nav li:nth-child(3) a .round .round--active{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #F04C49;
+}
+body.fp-viewing-advertising-block #fp-nav ul li:nth-child(3) a div,
+body.fp-viewing-top-phrases #fp-nav ul li:nth-child(3) a div,
+body.fp-viewing-announcement #fp-nav ul li:nth-child(3) a div,
+body.fp-viewing-geotagging #fp-nav ul li:nth-child(3) a div{
+    font-size: 1.1vw;
+    margin-top: -2px;
+    font-family: 'GothamProBlack';
+}
+
+body.fp-viewing-site-production #fp-nav li:nth-child(8) a .round .round--active,
+body.fp-viewing-delete-competitors #fp-nav li:nth-child(8) a .round .round--active,
+body.fp-viewing-video-production #fp-nav li:nth-child(8) a .round .round--active,
+body.fp-viewing-slideshow #fp-nav li:nth-child(8) a .round .round--active,
+body.fp-viewing-locate-video #fp-nav li:nth-child(8) a .round .round--active,
+body.fp-viewing-up-feedback #fp-nav li:nth-child(8) a .round .round--active,
+body.fp-viewing-url #fp-nav li:nth-child(8) a .round .round--active{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #F04C49;
+}
+body.fp-viewing-site-production #fp-nav ul li:nth-child(8) a div,
+body.fp-viewing-delete-competitors #fp-nav ul li:nth-child(8) a div,
+body.fp-viewing-video-production #fp-nav ul li:nth-child(8) a div,
+body.fp-viewing-slideshow #fp-nav ul li:nth-child(8) a div,
+body.fp-viewing-locate-video #fp-nav ul li:nth-child(8) a div,
+body.fp-viewing-up-feedback #fp-nav ul li:nth-child(8) a div,
+body.fp-viewing-url #fp-nav ul li:nth-child(8) a div{
+    font-size: 1.1vw;
+    margin-top: -2px;
+    font-family: 'GothamProBlack';
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 1921px){
+    #fp-nav ul li .fp-tooltip{
+        top: -10px;
+    }
+}
+@media (max-width: 1440px){
+    #fp-nav ul li a.active div,
+    #fp-nav ul li:hover a.active div{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1376px){
+    #fp-nav ul li .fp-tooltip{
+        top: -4px;
+    }
+}
+
+@media (max-width: 768px){
+    #fp-nav{
+        display: none;
+    }
+}
