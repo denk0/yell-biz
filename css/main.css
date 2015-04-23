@@ -31,6 +31,7 @@ a, button, .button{
 	background-color: #FFF;
 	border-radius: 50%;
 	bottom: 5vh;
+	outline: none !impor;
 	left: 35%;
 	z-index: 1000;
 	-webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
@@ -76,31 +77,6 @@ body.fp-viewing-premium .go-next img{
 	top: 2vh;
 	right: 0;
 	z-index: 1000;
-}
-.logo__image{
-
-}
-.logo__text{
-	color: #F04C49;
-	position: absolute;
-	left: 49px;
-	bottom: -5px;
-}
-.logo__text__top{
-	font-family: 'GothamProBlack', sans-serif;
-	font-size: 28px;
-	text-transform: uppercase;
-	font-style: italic;
-}
-.logo__text__top .ru{
-	font-size: 18px;
-}
-.logo__text__bottom{
-	font-family: 'GothamProMedium', sans-serif;
-	position: absolute;
-	right: 0;
-	top: 100%;
-	font-style: italic;
 }
 
 
@@ -584,17 +560,9 @@ body.fp-viewing-premium .go-next img{
 	width: 100%;
 	margin-top: 2vh;
 }
-.before .diagram{
-	background: url(../images/diagram1.png) 0 0 no-repeat;
-	-webkit-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-}
-.after .diagram{
-	background: url(../images/diagram2.png) 0 0 no-repeat;
-	-webkit-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+.diagram img{
+	width: 100%;
+	height: 100%;
 }
 .order{
 	text-transform: uppercase;
@@ -614,8 +582,8 @@ body.fp-viewing-premium .go-next img{
 	outline: none;
 }
 .order:hover{
-	background-color: #F34A44;
-	color: #f2f2f2;
+	color: #f66966;
+	border-color: #F66966;
 }
 .order-footnote{
 	font-family: 'GothamProMedium';
@@ -728,7 +696,8 @@ input.submit:hover{
 	z-index: 100;
 	font-size: 1vw;
 	line-height: 10vh;
-	border-bottom: 1px solid #f4f4f4;
+	background-color: #F4F4F4;
+	border-bottom: 1px solid #fff;
 	text-align: left;
 	font-family: 'GothamProMedium', sans-serif;
 	text-transform: uppercase;
@@ -757,13 +726,6 @@ body.fp-viewing-url .fixed-header-second{
 	        transition-delay: .6s;
 	opacity: 1;
 	visibility: visible;
-}
-body.fp-viewing-top-phrases .fixed-header-first,
-body.fp-viewing-geotagging .fixed-header-first,
-body.fp-viewing-delete-competitors .fixed-header-second,
-body.fp-viewing-slideshow .fixed-header-second,
-body.fp-viewing-up-feedback .fixed-header-second{
-	border-color: #fff;
 }
 
 /*MEDIA QUERIES*/
