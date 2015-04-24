@@ -761,7 +761,7 @@ body.fp-viewing-url .fixed-header-second{
 
 @media (max-width: 1919px){
 	.standart-text{
-		font-size: 1vw !important;
+		font-size: 1vw;
 	}
 	.video-production .standart-text{
 		margin-top: -10vh;
@@ -790,60 +790,159 @@ body.fp-viewing-url .fixed-header-second{
 }
 
 @media (max-width: 768px){
-	.fullpage{
-		max-width: 100%;
-	}
-	.section{
-		padding: 0 10px;
-	}
-	.go-next{
-		left: 45%;
-	}
-	.site-tittle{
-		height: 30vh;
-		font-size: 10vh;
-	}
-	.top-column{
-		margin-bottom: 30px;
-	}
-	.top-column__header{
-		font-size: 3.5vh;
-		margin-bottom: 10px;
-	}
-	.top-column__text{
-		font-size: 2vh;
-	}
-	.proposal-premium{
-		font-size: 2vh;
-		margin-top: 0;
-	}
-	.section-header{
-		font-size: 4vh;
-		padding-top: 5vh;
-		height: 40vh;
-	}
-	.proposal-tittle{
-		font-size: 3vh;
-	}
-	.proposal li{
-		font-size: 2vh;
-	}
-	.slideshow__list h3{
-		font-size: 3vh;
-	}
-	.slideshow__list p{
-		font-size: 2vh;
-	}
-	.cost__header{
-		font-size: 6vh;
-	}
 	.copyright{
 		display: none;
 	}
-	.fixed-header-first, .fixed-header-second{
+	.fixed-header-first{
 		width: 100%;
+		font-size: 1.5vh;
+	}
+	.fixed-header-second{
+		width: 100%;
+		font-size: 1.3vh;
 	}
 	.logo{
 		display: none;
+	}
+
+	.fullpage{
+		max-width: 100%;
+	}
+
+	.section{
+		padding: 0 10px;
+	}
+
+	.go-next{
+		left: 45%;
+	}
+
+	.site-tittle{
+		height: 30vh;
+		font-size: 5vh;
+		line-height: 1.5;
+	}
+	.millions__block{
+		font-size: 4vh;
+		margin-bottom: 5vh;
+		padding: 2vh 3vh;
+		color: #fff;
+	}
+	.millions__text{
+		font-size: 2vh;
+	}
+	.yell-is{
+		font-size: 2.5vh;
+	}
+
+	.center-tittle{
+		font-size: 2.5vh;
+	}
+	.center-tittle strong{
+		font-size: 5.9vh;
+	}
+
+	.clients-attraction .center-tittle .string-1{
+		line-height: 1.5;
+		font-size: 2.5vh;
+	}
+	.clients-attraction .center-tittle .string-2{
+		font-size: 2.8vh;
+	}
+	.clients-attraction .center-tittle strong{
+		font-size: 6vh;
+	}
+
+	.tools-tittle{
+		font-size: 2.7vh;
+	}
+	.list-tittle, .list-tittle--small{
+		font-size: 1.2vh;
+	}
+	.list li, .list--small li {
+		font-size: 1.1vh;
+	}
+	.bold-text{
+		font-size: 1vh;
+	}
+	p.standart-text{
+		font-size: 1vh;
+	}
+	.footnote{
+		margin-top: 1vh;
+		font-size: 1vh;
+	}
+	.print-text{
+		line-height: 40vh;
+	}
+	.print-text .bracket{
+		width: 15vw;
+		height: 40vh;
+	}
+	.geotagging .standart-text{
+		font-size: 1.2vh;
+	}
+
+	.attractive .string-1{
+		font-size: 2.4vh;
+		line-height: 1.5;
+	}
+	.attractive .string-2{
+		font-size: 2.2vh;
+	}
+	.attractive strong{
+		font-size: 6.2vh;
+		line-height: 1.2;
+	}
+	.site-production .standart-text{
+		font-size: 1.2vh;
+	}
+	.delete-competitors .standart-text{
+		font-size: 1.2vh;
+		margin-top: -5vh;
+	}
+	.delete-competitors .image-down{
+		background-position: 50% 50%;
+	}
+	.video-production .standart-text{
+		font-size: 1.2vh;
+	}
+	.page__text{
+		font-size: 1.2vh;
+	}
+	.slideshow .standart-text{
+		font-size: 1.3vh;
+	}
+	.locate-video .standart-text{
+		font-size: 1.2vh;
+	}
+	.up-feedback .standart-text{
+		font-size: 1.2vh;
+	}
+	.url .standart-text{
+		font-size: 1.2vh;
+	}
+	.premium .time{
+		font-size: 2vh;
+	}
+	.premium .diagram{
+		height: 20vh;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.order{
+		padding: 2vh 3vh;
+		font-size: 3vh;
+	}
+	.order-footnote{
+		font-size: 1.7vh;
+	}
+	.premium .phone{
+		font-size: 2vh;
+	}
+	.form{
+		width: 80vw;
+		left: 10vw;
 	}
 }
