@@ -7,20 +7,20 @@ $(document).ready(function() {
 		};
 		$(".go-next").attr("href", nextLink);
 
-		$('.overlay').fadeOut(700);
-		$('.form').fadeOut(700);
+		$('.overlay').fadeOut(100);
+		$('.form').fadeOut(100);
 	});
 	$('.branding-pages__box').click(function(){
 		$('.branding-pages__box').removeClass('index-more');
 		$(this).addClass('index-more');
 	});
 	$('.order').click(function() {
-		$('.overlay').fadeIn(700);
-		$('.form').fadeIn(700);
+		$('.overlay').fadeIn(100);
+		$('.form').fadeIn(100);
 	});
 	$('.overlay, #fp-nav').click(function() {
-		$('.overlay').fadeOut(700);
-		$('.form').fadeOut(700);
+		$('.overlay').fadeOut(100);
+		$('.form').fadeOut(100);
 	});
 
 	$('#fp-nav li a[href="#about-site-2"]').parent().addClass('menu-none');
