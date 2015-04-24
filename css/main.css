@@ -427,7 +427,7 @@ body.fp-viewing-premium .go-next img{
 	position: absolute;
 	bottom: 0;
 	left: 20%;
-	border-radius: 5px;
+	border-radius: 7px;
 }
 .delete-competitors .image-down{
 	background: url(../images/crossed-image.png) 0 0 no-repeat;
@@ -466,6 +466,7 @@ body.fp-viewing-premium .go-next img{
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
+	border-radius: 7px;
 }
 .page.page--company{
 	right: 0;
