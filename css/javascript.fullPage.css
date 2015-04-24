@@ -98,7 +98,7 @@ html, body {
     width: 25%;
     top: 0;
     bottom: 0;
-    padding-top: 40vh;
+    padding-top: 38vh;
 }
 #fp-nav.right {
     right: 0;
@@ -134,7 +134,8 @@ html, body {
     position: relative;
     z-index: 1;
     width: 100%;
-    font-family: 'GothamProLight';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     height: 100%;
     cursor: pointer;
     text-decoration: none;
@@ -180,14 +181,15 @@ html, body {
     right: 10%;
 }
 #fp-nav ul li{
-    padding-bottom: 5vh;
+    padding-bottom: 7vh;
 }
 
 #fp-nav ul li a.active div,
 #fp-nav ul li:hover a.active div{
-    font-size: 1.1vw;
-    margin-top: -2px;
-    font-family: 'GothamProBlack';
+    font-size: 1.3vw;
+    margin-top: -4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 #fp-nav ul li a.active .round .round--active,
 .fp-slidesNav ul li a.active .round .round--active,
@@ -221,9 +223,10 @@ body.fp-viewing-about-site-2 #fp-nav li:first-child a .round .round--active{
     border: 1px solid #F04C49;
 }
 body.fp-viewing-about-site-2 #fp-nav ul li:first-child a div{
-    font-size: 1.1vw;
-    margin-top: -2px;
-    font-family: 'GothamProBlack';
+    font-size: 1.3vw;
+    margin-top: -4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 body.fp-viewing-advertising-block #fp-nav li:nth-child(3) a .round .round--active,
@@ -243,9 +246,10 @@ body.fp-viewing-advertising-block #fp-nav ul li:nth-child(3) a div,
 body.fp-viewing-top-phrases #fp-nav ul li:nth-child(3) a div,
 body.fp-viewing-announcement #fp-nav ul li:nth-child(3) a div,
 body.fp-viewing-geotagging #fp-nav ul li:nth-child(3) a div{
-    font-size: 1.1vw;
-    margin-top: -2px;
-    font-family: 'GothamProBlack';
+    font-size: 1.3vw;
+    margin-top: -4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 body.fp-viewing-site-production #fp-nav li:nth-child(8) a .round .round--active,
@@ -271,9 +275,10 @@ body.fp-viewing-slideshow #fp-nav ul li:nth-child(8) a div,
 body.fp-viewing-locate-video #fp-nav ul li:nth-child(8) a div,
 body.fp-viewing-up-feedback #fp-nav ul li:nth-child(8) a div,
 body.fp-viewing-url #fp-nav ul li:nth-child(8) a div{
-    font-size: 1.1vw;
-    margin-top: -2px;
-    font-family: 'GothamProBlack';
+    font-size: 1.3vw;
+    margin-top: -4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 /*MEDIA QUERIES*/
@@ -286,7 +291,7 @@ body.fp-viewing-url #fp-nav ul li:nth-child(8) a div{
 @media (max-width: 1440px){
     #fp-nav ul li a.active div,
     #fp-nav ul li:hover a.active div{
-        margin-top: 0;
+        margin-top: -2px;
     }
 }
 
@@ -306,7 +311,7 @@ body.fp-viewing-url #fp-nav ul li:nth-child(8) a div{
     body.fp-viewing-locate-video #fp-nav ul li:nth-child(8) a div,
     body.fp-viewing-up-feedback #fp-nav ul li:nth-child(8) a div,
     body.fp-viewing-url #fp-nav ul li:nth-child(8) a div{
-        margin-top: 0;
+        margin-top: -2px;
     }
 }
 
