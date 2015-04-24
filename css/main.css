@@ -92,7 +92,7 @@ body.fp-viewing-premium .go-next img{
 
 /*about-1 styles*/
 .about-1{
-	background: url(../images/about-1.jpg) 0 0 no-repeat;
+	background: #ED4948 url(../images/about-1.jpg) 0 0 no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
@@ -136,7 +136,7 @@ body.fp-viewing-premium .go-next img{
 
 /*about-2 styles*/
 .about-2{
-	background: url(../images/about-2.jpg) 0 0 no-repeat;
+	background: #ED4948 url(../images/about-2.jpg) 0 0 no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
