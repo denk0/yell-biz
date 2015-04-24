@@ -224,7 +224,7 @@ body.fp-viewing-premium .go-next img{
 	position: relative;
 	padding-left: 5px;
 	line-height: 1.5;
-	font-family: 'GothamProLight', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
 .list li{
@@ -243,13 +243,13 @@ body.fp-viewing-premium .go-next img{
 	font-size: 0.8vw;
 	margin-top: 2vh;
 	margin-bottom: 0.5vh;
-	font-family: 'GothamProLight', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
 .bold-text{
 	font-size: 1vw;
 	margin-top: 4vh;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'GothamProLight', sans-serif;
 	font-weight: 300;
 }
 .right-image{
@@ -802,6 +802,12 @@ body.fp-viewing-url .fixed-header-second{
 		font-size: 6vh;
 	}
 	.copyright{
+		display: none;
+	}
+	.fixed-header-first, .fixed-header-second{
+		width: 100%;
+	}
+	.logo{
 		display: none;
 	}
 }
