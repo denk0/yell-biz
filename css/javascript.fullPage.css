@@ -294,6 +294,20 @@ body.fp-viewing-url #fp-nav ul li:nth-child(8) a div{
     #fp-nav ul li .fp-tooltip{
         top: -4px;
     }
+    body.fp-viewing-about-site-2 #fp-nav ul li:nth-child(1) a div,
+    body.fp-viewing-advertising-block #fp-nav ul li:nth-child(3) a div,
+    body.fp-viewing-top-phrases #fp-nav ul li:nth-child(3) a div,
+    body.fp-viewing-announcement #fp-nav ul li:nth-child(3) a div,
+    body.fp-viewing-geotagging #fp-nav ul li:nth-child(3) a div,
+    body.fp-viewing-site-production #fp-nav ul li:nth-child(8) a div,
+    body.fp-viewing-delete-competitors #fp-nav ul li:nth-child(8) a div,
+    body.fp-viewing-video-production #fp-nav ul li:nth-child(8) a div,
+    body.fp-viewing-slideshow #fp-nav ul li:nth-child(8) a div,
+    body.fp-viewing-locate-video #fp-nav ul li:nth-child(8) a div,
+    body.fp-viewing-up-feedback #fp-nav ul li:nth-child(8) a div,
+    body.fp-viewing-url #fp-nav ul li:nth-child(8) a div{
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 768px){
