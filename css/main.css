@@ -731,6 +731,35 @@ body.fp-viewing-url .fixed-header-second{
 
 /*MEDIA QUERIES*/
 
+@media (max-width: 1919px){
+	.standart-text{
+		font-size: 1vw !important;
+	}
+	.video-production .standart-text{
+		margin-top: -10vh;
+	}
+	.list li, .list--small li{
+		font-size: 1vw;
+	}
+	.list-tittle{
+		font-size: 1.1vw;
+	}
+	.list-tittle--small{
+		font-size: 1vw;
+	}
+	.footnote{
+		font-size: 0.9vw;
+	}
+	.geotagging .col-xs-6{
+		margin-top: -5vh;
+	}
+	.site-production .col-xs-6{
+		margin-top: -5vh;
+	}
+	p.page-text{
+		font-size: 1vw;
+	}
+}
 
 @media (max-width: 768px){
 	.fullpage{
