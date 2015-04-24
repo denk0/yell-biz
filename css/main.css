@@ -956,3 +956,12 @@ body.fp-viewing-url .fixed-header-second{
 		font-size: 1.8vh;
 	}
 }
+
+@media (max-width: 490px){
+	.site-tittle{
+		margin-bottom: 5vh;
+	}
+	.fixed-header-second{
+		font-size: 1.1vh;
+	}
+}
